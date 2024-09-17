@@ -1,0 +1,90 @@
+/* textarea
+{
+  height: 100px;
+  width:95%;
+} */
+
+.bgColor{
+  flex: row;
+  display: d-flex;
+  color: aqua;
+}
+
+/* Ensure the container does not overflow */
+.container {
+  /* overflow-x: hidden;
+  padding: 15px; */
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Add spacing between form groups */
+}
+
+.inputText{
+  height: 176px;
+}
+
+
+.command-prompt {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 10px;
+}
+
+textarea[readonly] {
+  cursor: not-allowed;
+}
+
+.icon-large {
+  font-size: 1.2rem !important;
+}
+
+.key {
+  font-weight: bold;
+  color: white; /* Adjust color as needed */
+  margin-right: 5px;
+}
+
+.list-inline-item {
+  margin-right: 20px; /* Adjust spacing between items as needed */
+  color: white;
+}
+
+/* Neon border effect */
+.neon-border {
+  position: relative;
+  padding: 10px;
+  background-color: #1e1e1e; /* Background color */
+  color: #00ff00; /* Text color */
+  border: 1px solid #00ff00; /* Border color */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Neon glow effect */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.neon-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit; /* Inherit border-radius from parent */
+  background: linear-gradient(45deg, rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0)); /* Neon gradient */
+  z-index: -1; /* Place behind the text area */
+  filter: blur(8px); /* Blur the gradient to enhance the glow effect */
+}
+
+/* White text with gold glow effect */
+.neon-glow {
+/* Black text with green glow effect */
+  color: #000000; /* Black text color */
+  text-shadow: 
+    0 0 5px #00ff00, /* Green glow effect */
+    0 0 10px #00ff00,
+    0 0 15px #00ff00,
+    0 0 20px #00ff00,
+    0 0 25px #00ff00;
+}
+
